@@ -1,6 +1,11 @@
-# Deploy Vite SPA by pushing dist/ to the gh-pages branch.
-# Avoids actions/upload-pages-artifact + deploy-pages (duplicate artifact bugs).
-name: Deploy to GitHub Pages
+# Publishes dist/ to the gh-pages BRANCH (not the official Pages artifact API).
+# Required repo setting (one time):
+#   Settings → Pages → Source: Deploy from a branch
+#   Branch: gh-pages / (root)
+#
+# Do NOT use Source: "GitHub Actions" — that path expects upload-pages-artifact
+# and fails with "Multiple artifacts named github-pages".
+name: Publish site (gh-pages)
 
 on:
   push:
@@ -11,11 +16,11 @@ permissions:
   contents: write
 
 concurrency:
-  group: pages
+  group: publish-gh-pages
   cancel-in-progress: false
 
 jobs:
-  deploy:
+  publish:
     runs-on: ubuntu-latest
     steps:
       - name: Checkout
@@ -33,16 +38,17 @@ jobs:
       - name: Build
         run: npm run build
 
-      # SPA deep-link fallback + disable Jekyll processing
-      - name: Prepare Pages output
+      - name: Prepare SPA output
         run: |
           cp dist/index.html dist/404.html
           touch dist/.nojekyll
 
-      - name: Publish to gh-pages branch
+      - name: Push dist to gh-pages branch
         uses: peaceiris/actions-gh-pages@v4
         with:
           github_token: ${{ secrets.GITHUB_TOKEN }}
           publish_dir: ./dist
           force_orphan: true
           enable_jekyll: false
+          user_name: github-actions[bot]
+          user_email: 41898282+github-actions[bot]@users.noreply.github.com
