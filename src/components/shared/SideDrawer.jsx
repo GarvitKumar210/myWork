@@ -3,10 +3,9 @@ import { createPortal } from 'react-dom'
 
 /**
  * Mobile navigation overlay.
- * - Portaled to document.body (never trapped by sticky/blur headers)
- * - Only mounted while open (never sits off-screen to the right)
- * - Full-viewport shell with fixed inline styles so layout cannot
- *   become a permanent side column + horizontal scroll
+ * Portaled to document.body; only mounted while open.
+ * Uses a light scroll lock (overflow only) so the page stays
+ * vertically scrollable after the menu closes.
  */
 export default function SideDrawer({
   open,
@@ -15,7 +14,6 @@ export default function SideDrawer({
   side = 'right',
   className = '',
   panelClassName = 'bg-white text-zinc-900',
-  /** Max panel width; shell is always full viewport. */
   widthClass = 'w-[min(20rem,86vw)]',
   hideFrom = 'md',
 }) {
@@ -27,29 +25,13 @@ export default function SideDrawer({
 
   useEffect(() => {
     if (!open) return undefined
-    const html = document.documentElement
-    const body = document.body
-    const prevHtmlOverflow = html.style.overflow
-    const prevBodyOverflow = body.style.overflow
-    const prevBodyPosition = body.style.position
-    const prevBodyTop = body.style.top
-    const prevBodyWidth = body.style.width
-    const scrollY = window.scrollY
 
-    // Lock scroll without allowing layout shift / side scroll
-    html.style.overflow = 'hidden'
+    const body = document.body
+    const prev = body.style.overflow
     body.style.overflow = 'hidden'
-    body.style.position = 'fixed'
-    body.style.top = `-${scrollY}px`
-    body.style.width = '100%'
 
     return () => {
-      html.style.overflow = prevHtmlOverflow
-      body.style.overflow = prevBodyOverflow
-      body.style.position = prevBodyPosition
-      body.style.top = prevBodyTop
-      body.style.width = prevBodyWidth
-      window.scrollTo(0, scrollY)
+      body.style.overflow = prev || ''
     }
   }, [open])
 
@@ -80,37 +62,29 @@ export default function SideDrawer({
       role="presentation"
       style={{
         position: 'fixed',
-        top: 0,
-        left: 0,
-        right: 0,
-        bottom: 0,
-        width: '100vw',
-        maxWidth: '100%',
-        height: '100dvh',
+        inset: 0,
         zIndex: 9999,
         overflow: 'hidden',
-        overscrollBehavior: 'none',
       }}
     >
-      {/* Dim full-screen backdrop — tap to close */}
       <button
         type="button"
         aria-label="Close menu"
         onClick={onClose}
-        className="mobile-nav-backdrop border-0"
+        className="border-0"
         style={{
           position: 'absolute',
           inset: 0,
-          width: '100%',
-          height: '100%',
           margin: 0,
           padding: 0,
+          border: 'none',
+          width: '100%',
+          height: '100%',
           background: 'rgba(0, 0, 0, 0.5)',
           cursor: 'pointer',
         }}
       />
 
-      {/* Slide-in panel */}
       <aside
         role="dialog"
         aria-modal="true"
@@ -123,7 +97,7 @@ export default function SideDrawer({
           [fromRight ? 'right' : 'left']: 0,
           height: '100%',
           maxHeight: '100dvh',
-          maxWidth: '100vw',
+          maxWidth: 'min(20rem, 86vw)',
           overflowY: 'auto',
           overscrollBehavior: 'contain',
           WebkitOverflowScrolling: 'touch',
