@@ -22,31 +22,11 @@ const links = [
 ]
 
 export default function Sidebar({ site, mobileOpen, onClose }) {
-  const [mobileRendered, setMobileRendered] = useState(false)
-  const [mobileVisible, setMobileVisible] = useState(false)
   const [mounted, setMounted] = useState(false)
 
   useEffect(() => {
     setMounted(true)
   }, [])
-
-  useEffect(() => {
-    if (mobileOpen) {
-      setMobileRendered(true)
-      const id = requestAnimationFrame(() => {
-        requestAnimationFrame(() => setMobileVisible(true))
-      })
-      return () => cancelAnimationFrame(id)
-    }
-    setMobileVisible(false)
-    return undefined
-  }, [mobileOpen])
-
-  useEffect(() => {
-    if (mobileOpen || !mobileRendered) return undefined
-    const t = window.setTimeout(() => setMobileRendered(false), 360)
-    return () => window.clearTimeout(t)
-  }, [mobileOpen, mobileRendered])
 
   const nav = (
     <>
@@ -115,43 +95,67 @@ export default function Sidebar({ site, mobileOpen, onClose }) {
     </>
   )
 
-  return (
-    <>
-      <aside className="hidden h-full w-60 shrink-0 flex-col overflow-hidden border-r border-slate-800 bg-slate-950 lg:flex">
-        {nav}
-      </aside>
-
-      {mounted &&
-        mobileRendered &&
-        createPortal(
+  const mobileMenu =
+    mounted && mobileOpen
+      ? createPortal(
           <div
-            className={`fixed inset-0 z-[200] overflow-hidden lg:hidden ${
-              mobileVisible ? 'pointer-events-auto' : 'pointer-events-none'
-            }`}
-            aria-hidden={!mobileVisible}
+            className="lg:hidden"
+            style={{
+              position: 'fixed',
+              top: 0,
+              left: 0,
+              right: 0,
+              bottom: 0,
+              width: '100vw',
+              maxWidth: '100%',
+              height: '100dvh',
+              zIndex: 9999,
+              overflow: 'hidden',
+            }}
           >
             <button
               type="button"
               aria-label="Close menu"
-              className={`absolute inset-0 border-0 bg-black/50 transition-opacity duration-300 ${
-                mobileVisible ? 'opacity-100' : 'opacity-0'
-              }`}
               onClick={onClose}
+              className="border-0"
+              style={{
+                position: 'absolute',
+                inset: 0,
+                margin: 0,
+                padding: 0,
+                width: '100%',
+                height: '100%',
+                background: 'rgba(0, 0, 0, 0.55)',
+                cursor: 'pointer',
+              }}
             />
             <aside
-              onTransitionEnd={(e) => {
-                if (e.target !== e.currentTarget) return
-                if (!mobileOpen && !mobileVisible) setMobileRendered(false)
+              className="flex flex-col bg-slate-950 shadow-2xl"
+              style={{
+                position: 'absolute',
+                left: 0,
+                top: 0,
+                height: '100%',
+                width: 'min(17rem, 88vw)',
+                maxWidth: '100vw',
+                overflow: 'hidden',
+                animation:
+                  'mobile-nav-in-left 0.28s cubic-bezier(0.22, 1, 0.36, 1) both',
               }}
-              className={`absolute left-0 top-0 flex h-[100dvh] max-h-[100dvh] w-[min(17rem,88vw)] max-w-[100vw] flex-col overflow-hidden bg-slate-950 shadow-2xl transition-transform duration-300 ease-[cubic-bezier(0.22,1,0.36,1)] ${
-                mobileVisible ? 'translate-x-0' : '-translate-x-full'
-              }`}
             >
               {nav}
             </aside>
           </div>,
           document.body,
-        )}
+        )
+      : null
+
+  return (
+    <>
+      <aside className="hidden h-full w-60 shrink-0 flex-col overflow-hidden border-r border-slate-800 bg-slate-950 lg:flex">
+        {nav}
+      </aside>
+      {mobileMenu}
     </>
   )
 }
