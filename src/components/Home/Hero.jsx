@@ -1,4 +1,5 @@
 import { Button } from './Button'
+import { FIVERR_URL } from './links'
 
 const skills = ['UX / UI Design', 'React', 'Node.js', 'Tailwind CSS']
 
@@ -138,8 +139,14 @@ export default function Hero() {
         <Button href="#examples" className="max-[720px]:w-full">
           View Examples
         </Button>
-        <Button href="#hire" variant="ghost" className="max-[720px]:w-full">
-          Get in touch
+        <Button
+          href={FIVERR_URL}
+          target="_blank"
+          rel="noopener noreferrer"
+          variant="ghost"
+          className="max-[720px]:w-full"
+        >
+          Hire Me
         </Button>
       </div>
     </section>

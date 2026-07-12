@@ -1,4 +1,5 @@
 import { Button } from './Button'
+import { FIVERR_URL } from './links'
 
 export default function Hire() {
   return (
@@ -22,10 +23,12 @@ export default function Hire() {
           your next idea — I&apos;d love to help build it.
         </p>
         <Button
-          href="mailto:hello@garvitkumar.com"
+          href={FIVERR_URL}
+          target="_blank"
+          rel="noopener noreferrer"
           className="px-9 py-4 text-[1.05rem] shadow-[0_8px_28px_rgba(0,0,0,0.25)] max-[720px]:w-full"
         >
-          Hire Me
+          Hire Me on Fiverr
         </Button>
       </div>
     </section>

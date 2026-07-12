@@ -1,5 +1,6 @@
 import { useState } from 'react'
 import { Button } from './Button'
+import { FIVERR_URL } from './links'
 import HamburgerButton from '../shared/HamburgerButton'
 import SideDrawer from '../shared/SideDrawer'
 
@@ -31,7 +32,9 @@ export default function Navbar() {
             Examples
           </a>
           <Button
-            href="#hire"
+            href={FIVERR_URL}
+            target="_blank"
+            rel="noopener noreferrer"
             className="reveal"
             data-reveal
             style={{ '--reveal-delay': '100ms' }}
@@ -77,7 +80,9 @@ export default function Navbar() {
             Examples
           </a>
           <a
-            href="#hire"
+            href={FIVERR_URL}
+            target="_blank"
+            rel="noopener noreferrer"
             className="drawer-link rounded-xl bg-navy px-4 py-3.5 text-center text-base font-semibold text-white no-underline"
             onClick={closeMenu}
           >
