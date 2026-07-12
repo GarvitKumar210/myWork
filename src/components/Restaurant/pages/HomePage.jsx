@@ -2,6 +2,7 @@ import { Link } from 'react-router-dom'
 import { SoftLoader } from '../../shared/Skeleton'
 import { useBackendMany } from '../../shared/useBackend'
 import { useReveal } from '../../shared/useReveal'
+import { publicUrl } from '../../shared/publicUrl'
 
 export default function HomePage() {
   const { data, error, loading } = useBackendMany('restaurant', [
@@ -31,7 +32,7 @@ export default function HomePage() {
     <div>
       <section className="relative min-h-[70vh] overflow-hidden">
         <img
-          src="/images/restaurant/hero.jpg"
+          src={publicUrl('images/restaurant/hero.jpg')}
           alt=""
           className="absolute inset-0 h-full w-full scale-105 object-cover transition duration-[1.2s] ease-out"
         />
@@ -188,7 +189,7 @@ export default function HomePage() {
           </div>
           <div className="min-h-[220px] sm:min-h-full">
             <img
-              src="/images/restaurant/interior.jpg"
+              src={publicUrl('images/restaurant/interior.jpg')}
               alt="Dining room"
               className="h-full w-full object-cover"
               loading="lazy"

@@ -1,6 +1,7 @@
 import { SoftLoader } from '../../shared/Skeleton'
 import { useBackend } from '../../shared/useBackend'
 import { useReveal } from '../../shared/useReveal'
+import { publicUrl } from '../../shared/publicUrl'
 
 export default function AboutPage() {
   const { data: about, error, loading } = useBackend('restaurant', 'about')
@@ -49,7 +50,7 @@ export default function AboutPage() {
           style={{ '--reveal-delay': '180ms' }}
         >
           <img
-            src="/images/restaurant/interior.jpg"
+            src={publicUrl('images/restaurant/interior.jpg')}
             alt="Restaurant interior"
             className="h-full min-h-[260px] w-full object-cover transition duration-700 hover:scale-105"
           />

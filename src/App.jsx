@@ -33,9 +33,12 @@ import AdminAnalyticsPage from './components/Admin/pages/AnalyticsPage'
 import AdminSettingsPage from './components/Admin/pages/SettingsPage'
 import AdminManagePage from './components/Admin/pages/ManagePage'
 
+// Strip trailing slash so React Router basename matches Vite base (/myWork/)
+const routerBasename = (import.meta.env.BASE_URL || '/').replace(/\/$/, '') || '/'
+
 function App() {
   return (
-    <BrowserRouter>
+    <BrowserRouter basename={routerBasename}>
       <ScrollToTop />
       <DocumentTitle />
       <Routes>

@@ -4,11 +4,25 @@
  * without blanking the UI (no full “refresh” feel).
  */
 
+import { publicUrl } from './publicUrl'
+
 const cache = new Map()
 
 function cacheKey(site, file) {
   const path = file.endsWith('.json') ? file : `${file}.json`
   return `${site}/${path}`
+}
+
+/** Rewrite root-absolute /images/... paths for the active Vite base. */
+function withPublicAssets(data) {
+  return JSON.parse(
+    JSON.stringify(data, (_key, value) => {
+      if (typeof value === 'string' && value.startsWith('/images/')) {
+        return publicUrl(value)
+      }
+      return value
+    }),
+  )
 }
 
 /** Sync read of already-loaded data (or null). */
@@ -35,7 +49,7 @@ export async function fetchBackend(site, file) {
   if (existing?.status === 'pending') return existing.promise
 
   const path = file.endsWith('.json') ? file : `${file}.json`
-  const promise = fetch(`/backend/${site}/${path}`)
+  const promise = fetch(publicUrl(`backend/${site}/${path}`))
     .then((res) => {
       if (!res.ok) {
         throw new Error(`Backend error: ${site}/${path} (${res.status})`)
@@ -43,8 +57,9 @@ export async function fetchBackend(site, file) {
       return res.json()
     })
     .then((data) => {
-      cache.set(key, { status: 'ready', data })
-      return data
+      const next = withPublicAssets(data)
+      cache.set(key, { status: 'ready', data: next })
+      return next
     })
     .catch((err) => {
       cache.delete(key)

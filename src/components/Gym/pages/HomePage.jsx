@@ -9,6 +9,7 @@ import {
 import { SoftLoader } from '../../shared/Skeleton'
 import { useBackendMany } from '../../shared/useBackend'
 import { useReveal } from '../../shared/useReveal'
+import { publicUrl } from '../../shared/publicUrl'
 
 export default function HomePage() {
   const { data, error, loading } = useBackendMany('gym', [
@@ -39,7 +40,7 @@ export default function HomePage() {
       {/* Hero */}
       <section className="relative min-h-[78vh] overflow-hidden">
         <img
-          src="/images/gym/hero.jpg"
+          src={publicUrl('images/gym/hero.jpg')}
           alt=""
           className="absolute inset-0 h-full w-full object-cover"
         />

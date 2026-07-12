@@ -38,6 +38,8 @@ function backendJsonApi() {
   }
 }
 
+// GitHub Pages project site: https://GarvitKumar210.github.io/myWork/
 export default defineConfig({
+  base: '/myWork/',
   plugins: [react(), tailwindcss(), backendJsonApi()],
 })

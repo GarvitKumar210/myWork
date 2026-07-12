@@ -3,6 +3,7 @@ import ProductCard from '../ProductCard'
 import { SoftLoader } from '../../shared/Skeleton'
 import { useBackendMany } from '../../shared/useBackend'
 import { useReveal } from '../../shared/useReveal'
+import { publicUrl } from '../../shared/publicUrl'
 
 export default function HomePage() {
   const { data, error, loading } = useBackendMany('ecommerce', [
@@ -33,7 +34,7 @@ export default function HomePage() {
     <div>
       <section className="relative min-h-[62vh] overflow-hidden">
         <img
-          src="/images/ecommerce/hero.jpg"
+          src={publicUrl('images/ecommerce/hero.jpg')}
           alt=""
           className="absolute inset-0 h-full w-full object-cover"
         />
