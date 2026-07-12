@@ -1,0 +1,131 @@
+{
+  "days": ["Mon", "Tue", "Wed", "Thu", "Fri", "Sat", "Sun"],
+  "slots": [
+    {
+      "id": "s1",
+      "day": "Mon",
+      "time": "6:00 AM",
+      "classId": "c1",
+      "className": "Power Hour",
+      "coach": "Maya Ortiz",
+      "room": "Platform A"
+    },
+    {
+      "id": "s2",
+      "day": "Mon",
+      "time": "12:15 PM",
+      "classId": "c2",
+      "className": "HIIT Engine",
+      "coach": "Jordan Blake",
+      "room": "Turf"
+    },
+    {
+      "id": "s3",
+      "day": "Mon",
+      "time": "6:30 PM",
+      "classId": "c3",
+      "className": "Mobility Lab",
+      "coach": "Sam Chen",
+      "room": "Studio"
+    },
+    {
+      "id": "s4",
+      "day": "Tue",
+      "time": "5:30 AM",
+      "classId": "c5",
+      "className": "Box Circuit",
+      "coach": "Alex Rivera",
+      "room": "Combat"
+    },
+    {
+      "id": "s5",
+      "day": "Tue",
+      "time": "7:00 PM",
+      "classId": "c4",
+      "className": "Olympic Lifts",
+      "coach": "Maya Ortiz",
+      "room": "Platform B"
+    },
+    {
+      "id": "s6",
+      "day": "Wed",
+      "time": "6:00 AM",
+      "classId": "c7",
+      "className": "Strongman Basics",
+      "coach": "Jordan Blake",
+      "room": "Turf"
+    },
+    {
+      "id": "s7",
+      "day": "Wed",
+      "time": "12:00 PM",
+      "classId": "c8",
+      "className": "Core Crush",
+      "coach": "Sam Chen",
+      "room": "Studio"
+    },
+    {
+      "id": "s8",
+      "day": "Thu",
+      "time": "6:15 AM",
+      "classId": "c1",
+      "className": "Power Hour",
+      "coach": "Maya Ortiz",
+      "room": "Platform A"
+    },
+    {
+      "id": "s9",
+      "day": "Thu",
+      "time": "6:00 PM",
+      "classId": "c2",
+      "className": "HIIT Engine",
+      "coach": "Jordan Blake",
+      "room": "Turf"
+    },
+    {
+      "id": "s10",
+      "day": "Fri",
+      "time": "5:45 AM",
+      "classId": "c5",
+      "className": "Box Circuit",
+      "coach": "Alex Rivera",
+      "room": "Combat"
+    },
+    {
+      "id": "s11",
+      "day": "Fri",
+      "time": "5:30 PM",
+      "classId": "c6",
+      "className": "Reset Yoga",
+      "coach": "Priya Nair",
+      "room": "Studio"
+    },
+    {
+      "id": "s12",
+      "day": "Sat",
+      "time": "9:00 AM",
+      "classId": "c7",
+      "className": "Strongman Basics",
+      "coach": "Jordan Blake",
+      "room": "Turf"
+    },
+    {
+      "id": "s13",
+      "day": "Sat",
+      "time": "11:00 AM",
+      "classId": "c3",
+      "className": "Mobility Lab",
+      "coach": "Sam Chen",
+      "room": "Studio"
+    },
+    {
+      "id": "s14",
+      "day": "Sun",
+      "time": "10:00 AM",
+      "classId": "c6",
+      "className": "Reset Yoga",
+      "coach": "Priya Nair",
+      "room": "Studio"
+    }
+  ]
+}

@@ -1,0 +1,147 @@
+/* Home page only — custom CSS (not shared with future pages) */
+/* .reveal lives in index.css (shared). Home hero dots skip vertical drift. */
+
+.hero-dots.reveal,
+.hero-dots.reveal.is-in {
+  transform: none;
+}
+
+/* Dot field — positions come from inline styles in Hero */
+.hero-dots {
+  position: absolute;
+  inset: 0 0 0 52%;
+  z-index: 0;
+  overflow: hidden;
+  pointer-events: none;
+}
+
+.dot {
+  position: absolute;
+  border-radius: 50%;
+  background: #050256;
+  will-change: transform;
+}
+
+@media (max-width: 720px) {
+  .hero-dots {
+    left: 58%;
+  }
+
+  .dot {
+    transform: scale(0.8);
+  }
+}
+
+/* Free drift paths */
+@media (prefers-reduced-motion: no-preference) {
+  .dot-drift-a {
+    animation: drift-a var(--drift-duration, 11s) ease-in-out infinite
+      var(--drift-delay, 0s);
+  }
+  .dot-drift-b {
+    animation: drift-b var(--drift-duration, 10s) ease-in-out infinite
+      var(--drift-delay, 0s);
+  }
+  .dot-drift-c {
+    animation: drift-c var(--drift-duration, 12s) ease-in-out infinite
+      var(--drift-delay, 0s);
+  }
+  .dot-drift-d {
+    animation: drift-d var(--drift-duration, 9s) ease-in-out infinite
+      var(--drift-delay, 0s);
+  }
+}
+
+@keyframes drift-a {
+  0%,
+  100% {
+    transform: translate(0, 0);
+  }
+  25% {
+    transform: translate(10px, -14px);
+  }
+  50% {
+    transform: translate(-6px, -22px);
+  }
+  75% {
+    transform: translate(12px, -8px);
+  }
+}
+
+@keyframes drift-b {
+  0%,
+  100% {
+    transform: translate(0, 0);
+  }
+  33% {
+    transform: translate(-14px, -10px);
+  }
+  66% {
+    transform: translate(8px, -20px);
+  }
+}
+
+@keyframes drift-c {
+  0%,
+  100% {
+    transform: translate(0, 0);
+  }
+  20% {
+    transform: translate(6px, 12px);
+  }
+  50% {
+    transform: translate(-12px, -8px);
+  }
+  80% {
+    transform: translate(14px, -16px);
+  }
+}
+
+@keyframes drift-d {
+  0%,
+  100% {
+    transform: translate(0, 0);
+  }
+  30% {
+    transform: translate(-8px, 10px);
+  }
+  60% {
+    transform: translate(16px, -12px);
+  }
+  85% {
+    transform: translate(-4px, -18px);
+  }
+}
+
+/* Project card gradients */
+.project-visual-1 {
+  background:
+    radial-gradient(circle at 20% 30%, rgba(7, 201, 49, 0.35), transparent 45%),
+    radial-gradient(circle at 80% 70%, rgba(5, 2, 86, 0.35), transparent 50%),
+    linear-gradient(145deg, #e8e9f5, #f4f7f4);
+}
+
+.project-visual-2 {
+  background:
+    radial-gradient(circle at 70% 25%, rgba(5, 2, 86, 0.4), transparent 45%),
+    radial-gradient(circle at 20% 80%, rgba(7, 201, 49, 0.25), transparent 50%),
+    linear-gradient(160deg, #f0f0f8, #eef6ef);
+}
+
+.project-visual-3 {
+  background:
+    radial-gradient(circle at 40% 60%, rgba(7, 201, 49, 0.3), transparent 50%),
+    radial-gradient(circle at 90% 20%, rgba(5, 2, 86, 0.28), transparent 45%),
+    linear-gradient(180deg, #f7f7fb, #e9f5ec);
+}
+
+.hire-gradient {
+  background: linear-gradient(
+    135deg,
+    color-mix(in srgb, #050256 96%, #fff),
+    #0a0870 55%,
+    color-mix(in srgb, #050256 80%, #07c931)
+  );
+}
+
+

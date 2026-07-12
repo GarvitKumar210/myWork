@@ -1,0 +1,58 @@
+{
+  "items": [
+    {
+      "id": "r1",
+      "productId": "p1",
+      "name": "Morgan T.",
+      "rating": 5,
+      "title": "All-day comfort",
+      "text": "Wore these on a 12k step day. No hotspots, still look clean.",
+      "date": "2026-02-18"
+    },
+    {
+      "id": "r2",
+      "productId": "p2",
+      "name": "Casey R.",
+      "rating": 5,
+      "title": "Work bag sorted",
+      "text": "Fits my laptop and a water bottle without looking bulky. Leather smells amazing.",
+      "date": "2026-02-02"
+    },
+    {
+      "id": "r3",
+      "productId": "p4",
+      "name": "Jamie L.",
+      "rating": 4,
+      "title": "Great daypack",
+      "text": "Organization is excellent. Wish there was a hip belt for longer hikes.",
+      "date": "2026-01-22"
+    },
+    {
+      "id": "r4",
+      "productId": "p3",
+      "name": "Avery K.",
+      "rating": 5,
+      "title": "Perfect third layer",
+      "text": "Between a tee and a coat — this overshirt lives on my chair at work.",
+      "date": "2026-01-11"
+    },
+    {
+      "id": "r5",
+      "productId": "p10",
+      "name": "Riley S.",
+      "rating": 5,
+      "title": "Daily driver",
+      "text": "Replaced my pocket dump. Strap is comfortable across the chest.",
+      "date": "2025-12-30"
+    },
+    {
+      "id": "r6",
+      "name": "Sam P.",
+      "rating": 5,
+      "title": "Fast shipping",
+      "text": "Ordered Friday, arrived Monday. Packaging was recyclable and simple.",
+      "date": "2026-02-20",
+      "productId": null
+    }
+  ]
+}

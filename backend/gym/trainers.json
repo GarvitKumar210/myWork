@@ -1,0 +1,64 @@
+{
+  "items": [
+    {
+      "id": "t1",
+      "name": "Maya Ortiz",
+      "role": "Head Strength Coach",
+      "specialty": "Powerlifting · Olympic lifts",
+      "years": 11,
+      "bio": "Former national-level lifter. Obsessed with clean bars and long careers.",
+      "certs": ["CSCS", "USAW L2"],
+      "image": "/images/gym/coach-maya.jpg"
+    },
+    {
+      "id": "t2",
+      "name": "Jordan Blake",
+      "role": "Conditioning Lead",
+      "specialty": "HIIT · Strongman",
+      "years": 8,
+      "bio": "Built engines for athletes who need to last four quarters, not four minutes.",
+      "certs": ["NASM CPT", "StrongFirst"],
+      "image": "/images/gym/coach-jordan.jpg"
+    },
+    {
+      "id": "t3",
+      "name": "Sam Chen",
+      "role": "Mobility & Recovery",
+      "specialty": "Mobility · Core",
+      "years": 7,
+      "bio": "Fixes the stiff shoulders that make bench press miserable.",
+      "certs": ["FRCms", "FMS"],
+      "image": "/images/gym/coach-sam.jpg"
+    },
+    {
+      "id": "t4",
+      "name": "Alex Rivera",
+      "role": "Combat Conditioning",
+      "specialty": "Boxing · Circuits",
+      "years": 9,
+      "bio": "Ex-amateur boxer who still loves the bag more than the mirror.",
+      "certs": ["USA Boxing Coach"],
+      "image": "/images/gym/coach-alex.jpg"
+    },
+    {
+      "id": "t5",
+      "name": "Priya Nair",
+      "role": "Yoga & Breath",
+      "specialty": "Yoga · Recovery",
+      "years": 6,
+      "bio": "Teaches lifters how to downshift so they can go hard again tomorrow.",
+      "certs": ["RYT-500"],
+      "image": "/images/gym/coach-priya.jpg"
+    },
+    {
+      "id": "t6",
+      "name": "Chris Park",
+      "role": "Personal Training",
+      "specialty": "Hypertrophy · Beginners",
+      "years": 5,
+      "bio": "Patient with first-timers, ruthless with excuses — in a friendly way.",
+      "certs": ["NSCA CPT"],
+      "image": "/images/gym/coach-chris.jpg"
+    }
+  ]
+}

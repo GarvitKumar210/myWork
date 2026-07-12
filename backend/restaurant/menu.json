@@ -1,0 +1,190 @@
+{
+  "updated": "2026-03-01",
+  "note": "Menu changes with the season. Prices in USD.",
+  "categories": [
+    {
+      "id": "starters",
+      "name": "Starters",
+      "items": [
+        {
+          "id": "s1",
+          "name": "Charred Sourdough",
+          "description": "Cultured butter, smoked salt, wild oregano oil",
+          "price": 9,
+          "tags": ["vegetarian"],
+          "image": "/images/restaurant/bread.jpg"
+        },
+        {
+          "id": "s2",
+          "name": "Citrus Burrata",
+          "description": "Blood orange, pistachio, fennel pollen",
+          "price": 16,
+          "tags": ["vegetarian"],
+          "image": "/images/restaurant/burrata.jpg"
+        },
+        {
+          "id": "s3",
+          "name": "Ember Oysters",
+          "description": "Half dozen, chili mignonette, lemon ash",
+          "price": 22,
+          "tags": ["gluten-free"],
+          "image": "/images/restaurant/oysters.jpg"
+        },
+        {
+          "id": "s4",
+          "name": "Fire-Roasted Peppers",
+          "description": "Blistered shishitos, almond romesco, soft herbs",
+          "price": 14,
+          "tags": ["vegan", "gluten-free"],
+          "image": "/images/restaurant/squash.jpg"
+        },
+        {
+          "id": "s5",
+          "name": "Beef Tartare",
+          "description": "Hand-cut, cured yolk, rye crisps, pickles",
+          "price": 19,
+          "tags": [],
+          "image": "/images/restaurant/steak.jpg"
+        }
+      ]
+    },
+    {
+      "id": "mains",
+      "name": "Mains",
+      "items": [
+        {
+          "id": "m1",
+          "name": "Wood-Fired Ribeye",
+          "description": "Bone marrow butter, roasted alliums, herb jus",
+          "price": 48,
+          "tags": ["gluten-free"],
+          "image": "/images/restaurant/steak.jpg"
+        },
+        {
+          "id": "m2",
+          "name": "Hand-Cut Pappardelle",
+          "description": "Slow lamb ragu, pecorino, black pepper",
+          "price": 32,
+          "tags": [],
+          "image": "/images/restaurant/pasta.jpg"
+        },
+        {
+          "id": "m3",
+          "name": "Market Catch",
+          "description": "Daily fish, brown butter, capers, crushed new potatoes",
+          "price": 36,
+          "tags": ["gluten-free"],
+          "image": "/images/restaurant/fish.jpg"
+        },
+        {
+          "id": "m4",
+          "name": "Roasted Squash Bowl",
+          "description": "Farro, tahini, pomegranate, crispy sage",
+          "price": 26,
+          "tags": ["vegan"],
+          "image": "/images/restaurant/squash.jpg"
+        },
+        {
+          "id": "m5",
+          "name": "Half Roast Chicken",
+          "description": "Citrus brine, pan drippings, bitter greens",
+          "price": 34,
+          "tags": ["gluten-free"],
+          "image": "/images/restaurant/interior.jpg"
+        },
+        {
+          "id": "m6",
+          "name": "Mushroom Risotto",
+          "description": "Porcini, mascarpone, aged parmesan, thyme",
+          "price": 29,
+          "tags": ["vegetarian", "gluten-free"],
+          "image": "/images/restaurant/pasta.jpg"
+        }
+      ]
+    },
+    {
+      "id": "desserts",
+      "name": "Desserts",
+      "items": [
+        {
+          "id": "d1",
+          "name": "Dark Chocolate Pot",
+          "description": "Sea salt, olive oil, toasted hazelnut",
+          "price": 12,
+          "tags": ["vegetarian"],
+          "image": "/images/restaurant/dessert.jpg"
+        },
+        {
+          "id": "d2",
+          "name": "Honey Panna Cotta",
+          "description": "Local honey, roasted stone fruit",
+          "price": 11,
+          "tags": ["gluten-free", "vegetarian"],
+          "image": "/images/restaurant/panna.jpg"
+        },
+        {
+          "id": "d3",
+          "name": "Olive Oil Cake",
+          "description": "Citrus glaze, whipped ricotta, candied peel",
+          "price": 12,
+          "tags": ["vegetarian"],
+          "image": "/images/restaurant/pastry.jpg"
+        },
+        {
+          "id": "d4",
+          "name": "Affogato",
+          "description": "Vanilla gelato, espresso, amaretto crumb",
+          "price": 10,
+          "tags": ["vegetarian"],
+          "image": "/images/restaurant/dessert.jpg"
+        }
+      ]
+    },
+    {
+      "id": "drinks",
+      "name": "From the Bar",
+      "items": [
+        {
+          "id": "dr1",
+          "name": "House Negroni",
+          "description": "Barrel-aged gin, bitter orange, vermouth",
+          "price": 14,
+          "tags": [],
+          "image": "/images/restaurant/cocktail.jpg"
+        },
+        {
+          "id": "dr2",
+          "name": "Cedar Old Fashioned",
+          "description": "Rye, maple, smoked cherry",
+          "price": 15,
+          "tags": [],
+          "image": "/images/restaurant/whiskey.jpg"
+        },
+        {
+          "id": "dr3",
+          "name": "Natural Wine Flight",
+          "description": "Three pours · staff picks of the week",
+          "price": 24,
+          "tags": [],
+          "image": "/images/restaurant/wine.jpg"
+        },
+        {
+          "id": "dr4",
+          "name": "Smoke & Honey Sour",
+          "description": "Mezcal, lemon, wildflower honey, egg white",
+          "price": 14,
+          "tags": [],
+          "image": "/images/restaurant/cocktail.jpg"
+        },
+        {
+          "id": "dr5",
+          "name": "Sparkling Water Pairing",
+          "description": "House tonic, citrus oil, seasonal shrubs",
+          "price": 8,
+          "tags": ["vegan"],
+          "image": "/images/restaurant/wine.jpg"
+        }
+      ]
+    }
+  ]
+}

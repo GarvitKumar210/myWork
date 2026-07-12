@@ -1,0 +1,23 @@
+{
+  "name": "Ember & Oak",
+  "tagline": "Wood-fired plates · seasonal tables",
+  "description": "A neighborhood restaurant where open fire, local farms, and unhurried evenings meet.",
+  "phone": "+1 (415) 555-0198",
+  "email": "hello@emberandoak.demo",
+  "address": {
+    "street": "48 Cedar Lane",
+    "city": "San Francisco",
+    "state": "CA",
+    "zip": "94110"
+  },
+  "hours": [
+    { "days": "Tue – Thu", "time": "5:00 PM – 10:00 PM" },
+    { "days": "Fri – Sat", "time": "5:00 PM – 11:00 PM" },
+    { "days": "Sunday", "time": "4:00 PM – 9:00 PM" },
+    { "days": "Monday", "time": "Closed" }
+  ],
+  "social": {
+    "instagram": "@emberandoak",
+    "reservationsNote": "Walk-ins welcome · parties of 6+ book ahead"
+  }
+}

@@ -1,0 +1,307 @@
+{
+  "items": [
+    {
+      "id": "p1",
+      "slug": "cloud-runner-sneakers",
+      "name": "Cloud Runner Sneakers",
+      "category": "footwear",
+      "price": 128,
+      "compareAt": 148,
+      "rating": 4.8,
+      "reviews": 214,
+      "badge": "Best seller",
+      "colors": ["Bone", "Ink", "Sage"],
+      "sizes": ["7", "8", "9", "10", "11", "12"],
+      "inStock": true,
+      "stock": 42,
+      "featured": true,
+      "image": "/images/ecommerce/p1.jpg",
+      "gallery": [
+        "/images/ecommerce/p1.jpg",
+        "/images/ecommerce/p1b.jpg"
+      ],
+      "description": "Lightweight daily trainers with a cushioned midsole and breathable knit upper. Built for long walks and soft landings.",
+      "details": [
+        "Knit upper, recycled foam midsole",
+        "Rubber outsole with city grip",
+        "Removable orthotic-friendly insole"
+      ]
+    },
+    {
+      "id": "p2",
+      "slug": "metro-leather-tote",
+      "name": "Metro Leather Tote",
+      "category": "bags",
+      "price": 168,
+      "compareAt": null,
+      "rating": 4.9,
+      "reviews": 98,
+      "badge": "New",
+      "colors": ["Cognac", "Black"],
+      "sizes": ["One size"],
+      "inStock": true,
+      "stock": 18,
+      "featured": true,
+      "image": "/images/ecommerce/p2.jpg",
+      "gallery": [
+        "/images/ecommerce/p2.jpg",
+        "/images/ecommerce/p2b.jpg"
+      ],
+      "description": "A structured tote that still feels soft. Laptop sleeve, key leash, and room for a week of errands.",
+      "details": [
+        "Full-grain leather",
+        "15\" laptop sleeve",
+        "Interior zip pocket"
+      ]
+    },
+    {
+      "id": "p3",
+      "slug": "softshell-overshirt",
+      "name": "Softshell Overshirt",
+      "category": "apparel",
+      "price": 98,
+      "compareAt": 118,
+      "rating": 4.6,
+      "reviews": 156,
+      "badge": null,
+      "colors": ["Sand", "Olive", "Charcoal"],
+      "sizes": ["XS", "S", "M", "L", "XL"],
+      "inStock": true,
+      "stock": 55,
+      "featured": true,
+      "image": "/images/ecommerce/p3.jpg",
+      "gallery": [
+        "/images/ecommerce/p3.jpg",
+        "/images/ecommerce/p3b.jpg"
+      ],
+      "description": "The layer you leave on when the café is cold and the walk home is colder. Softshell fabric with quiet stretch.",
+      "details": [
+        "Two-way stretch softshell",
+        "Snap front, chest pocket",
+        "Machine wash cold"
+      ]
+    },
+    {
+      "id": "p4",
+      "slug": "daypack-20l",
+      "name": "Daypack 20L",
+      "category": "bags",
+      "price": 89,
+      "compareAt": null,
+      "rating": 4.7,
+      "reviews": 301,
+      "badge": "Best seller",
+      "colors": ["Slate", "Black", "Clay"],
+      "sizes": ["One size"],
+      "inStock": true,
+      "stock": 67,
+      "featured": true,
+      "image": "/images/ecommerce/p4.jpg",
+      "gallery": [
+        "/images/ecommerce/p4.jpg",
+        "/images/ecommerce/p4b.jpg"
+      ],
+      "description": "A clean daypack with a padded laptop bay and a water-resistant shell. No loud logos, plenty of organization.",
+      "details": [
+        "20L capacity",
+        "Padded 16\" laptop sleeve",
+        "Water-resistant ripstop"
+      ]
+    },
+    {
+      "id": "p5",
+      "slug": "merino-crew",
+      "name": "Merino Crew",
+      "category": "apparel",
+      "price": 72,
+      "compareAt": null,
+      "rating": 4.5,
+      "reviews": 88,
+      "badge": null,
+      "colors": ["Heather", "Navy", "Forest"],
+      "sizes": ["XS", "S", "M", "L", "XL"],
+      "inStock": true,
+      "stock": 40,
+      "featured": false,
+      "image": "/images/ecommerce/p5.jpg",
+      "gallery": ["/images/ecommerce/p5.jpg"],
+      "description": "Fine merino that regulates temperature without the itch. Your default under-jacket layer.",
+      "details": [
+        "17.5 micron merino",
+        "Anti-odor, moisture wicking",
+        "Slim modern fit"
+      ]
+    },
+    {
+      "id": "p6",
+      "slug": "city-cap",
+      "name": "City Cap",
+      "category": "accessories",
+      "price": 34,
+      "compareAt": null,
+      "rating": 4.4,
+      "reviews": 120,
+      "badge": null,
+      "colors": ["Black", "Stone", "Rose"],
+      "sizes": ["One size"],
+      "inStock": true,
+      "stock": 90,
+      "featured": false,
+      "image": "/images/ecommerce/p6.jpg",
+      "gallery": ["/images/ecommerce/p6.jpg"],
+      "description": "Unstructured cotton cap with a soft brim. Packs flat, looks intentional.",
+      "details": [
+        "Washed cotton twill",
+        "Adjustable strap",
+        "Low profile"
+      ]
+    },
+    {
+      "id": "p7",
+      "slug": "trail-low-boots",
+      "name": "Trail Low Boots",
+      "category": "footwear",
+      "price": 156,
+      "compareAt": 176,
+      "rating": 4.7,
+      "reviews": 64,
+      "badge": "Limited",
+      "colors": ["Walnut", "Black"],
+      "sizes": ["7", "8", "9", "10", "11"],
+      "inStock": true,
+      "stock": 22,
+      "featured": true,
+      "image": "/images/ecommerce/p7.jpg",
+      "gallery": [
+        "/images/ecommerce/p7.jpg",
+        "/images/ecommerce/p7b.jpg"
+      ],
+      "description": "Low boots with trail grip and a clean silhouette that still works with jeans downtown.",
+      "details": [
+        "Suede + textile upper",
+        "Vibram-style outsole",
+        "Gusseted tongue"
+      ]
+    },
+    {
+      "id": "p8",
+      "slug": "woven-card-holder",
+      "name": "Woven Card Holder",
+      "category": "accessories",
+      "price": 42,
+      "compareAt": null,
+      "rating": 4.6,
+      "reviews": 201,
+      "badge": null,
+      "colors": ["Tan", "Black"],
+      "sizes": ["One size"],
+      "inStock": true,
+      "stock": 110,
+      "featured": false,
+      "image": "/images/ecommerce/p8.jpg",
+      "gallery": ["/images/ecommerce/p8.jpg"],
+      "description": "Slim woven leather for four cards and folded cash. No bulk in the front pocket.",
+      "details": [
+        "Vegetable-tanned leather",
+        "Holds 4–6 cards",
+        "Hand-finished edges"
+      ]
+    },
+    {
+      "id": "p9",
+      "slug": "linen-camp-shirt",
+      "name": "Linen Camp Shirt",
+      "category": "apparel",
+      "price": 84,
+      "compareAt": null,
+      "rating": 4.5,
+      "reviews": 73,
+      "badge": "New",
+      "colors": ["Ivory", "Sky", "Clay"],
+      "sizes": ["S", "M", "L", "XL"],
+      "inStock": true,
+      "stock": 35,
+      "featured": true,
+      "image": "/images/ecommerce/p9.jpg",
+      "gallery": ["/images/ecommerce/p9.jpg"],
+      "description": "Open-collar linen that breathes on warm days. Slightly oversized, never sloppy.",
+      "details": [
+        "European linen",
+        "Camp collar, coconut buttons",
+        "Garment washed"
+      ]
+    },
+    {
+      "id": "p10",
+      "slug": "crossbody-sling",
+      "name": "Crossbody Sling",
+      "category": "bags",
+      "price": 64,
+      "compareAt": 74,
+      "rating": 4.8,
+      "reviews": 189,
+      "badge": null,
+      "colors": ["Black", "Moss", "Sand"],
+      "sizes": ["One size"],
+      "inStock": true,
+      "stock": 48,
+      "featured": false,
+      "image": "/images/ecommerce/p10.jpg",
+      "gallery": ["/images/ecommerce/p10.jpg"],
+      "description": "Hands-free sling for phone, wallet, keys, and a small bottle. Soft shell, secure zip.",
+      "details": [
+        "Water-resistant nylon",
+        "Adjustable strap",
+        "RFID pocket"
+      ]
+    },
+    {
+      "id": "p11",
+      "slug": "wool-beanie",
+      "name": "Wool Beanie",
+      "category": "accessories",
+      "price": 28,
+      "compareAt": null,
+      "rating": 4.3,
+      "reviews": 95,
+      "badge": null,
+      "colors": ["Charcoal", "Cream", "Rust"],
+      "sizes": ["One size"],
+      "inStock": true,
+      "stock": 75,
+      "featured": false,
+      "image": "/images/ecommerce/p11.jpg",
+      "gallery": ["/images/ecommerce/p11.jpg"],
+      "description": "Ribbed merino blend beanie that holds shape after washes. No pom, no fuss.",
+      "details": [
+        "Merino blend",
+        "Double-layer cuff",
+        "Unisex fit"
+      ]
+    },
+    {
+      "id": "p12",
+      "slug": "court-retro-hi",
+      "name": "Court Retro Hi",
+      "category": "footwear",
+      "price": 112,
+      "compareAt": null,
+      "rating": 4.6,
+      "reviews": 142,
+      "badge": null,
+      "colors": ["White/Gum", "Black/White"],
+      "sizes": ["7", "8", "9", "10", "11", "12"],
+      "inStock": false,
+      "stock": 0,
+      "featured": false,
+      "image": "/images/ecommerce/p12.jpg",
+      "gallery": ["/images/ecommerce/p12.jpg"],
+      "description": "High-top court silhouette with gum sole. Currently sold out — join the restock list in checkout notes.",
+      "details": [
+        "Leather upper",
+        "Vulcanized sole",
+        "Padded collar"
+      ]
+    }
+  ]
+}

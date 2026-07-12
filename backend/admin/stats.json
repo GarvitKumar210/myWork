@@ -1,0 +1,43 @@
+{
+  "kpis": [
+    {
+      "id": "revenue",
+      "label": "Revenue",
+      "value": "$48,290",
+      "change": 12.4,
+      "period": "vs last 30 days"
+    },
+    {
+      "id": "orders",
+      "label": "Orders",
+      "value": "1,284",
+      "change": 8.1,
+      "period": "vs last 30 days"
+    },
+    {
+      "id": "users",
+      "label": "Active users",
+      "value": "9,402",
+      "change": 3.2,
+      "period": "vs last 30 days"
+    },
+    {
+      "id": "conversion",
+      "label": "Conversion",
+      "value": "3.8%",
+      "change": -0.4,
+      "period": "vs last 30 days"
+    }
+  ],
+  "chart": {
+    "labels": ["Mon", "Tue", "Wed", "Thu", "Fri", "Sat", "Sun"],
+    "revenue": [4200, 5100, 4800, 6200, 7100, 8900, 7600],
+    "orders": [120, 145, 132, 168, 190, 240, 210]
+  },
+  "topProducts": [
+    { "name": "Cloud Runner", "sold": 342, "revenue": 43776 },
+    { "name": "Daypack 20L", "sold": 218, "revenue": 19402 },
+    { "name": "Metro Tote", "sold": 156, "revenue": 26208 },
+    { "name": "Softshell Overshirt", "sold": 129, "revenue": 12642 }
+  ]
+}

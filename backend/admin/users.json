@@ -1,0 +1,184 @@
+{
+  "items": [
+    {
+      "id": "u1",
+      "name": "Jordan Lee",
+      "email": "jordan@example.com",
+      "role": "Customer",
+      "status": "active",
+      "orders": 12,
+      "spent": 1480,
+      "joined": "2025-11-02"
+    },
+    {
+      "id": "u2",
+      "name": "Sam Okonkwo",
+      "email": "sam.o@example.com",
+      "role": "Customer",
+      "status": "active",
+      "orders": 5,
+      "spent": 620,
+      "joined": "2026-01-14"
+    },
+    {
+      "id": "u3",
+      "name": "Riley Park",
+      "email": "riley@brand.co",
+      "role": "Vendor",
+      "status": "active",
+      "orders": 0,
+      "spent": 0,
+      "joined": "2025-09-20"
+    },
+    {
+      "id": "u4",
+      "name": "Casey Nguyen",
+      "email": "casey.n@example.com",
+      "role": "Customer",
+      "status": "suspended",
+      "orders": 2,
+      "spent": 98,
+      "joined": "2026-02-01"
+    },
+    {
+      "id": "u5",
+      "name": "Morgan Diaz",
+      "email": "morgan@example.com",
+      "role": "Support",
+      "status": "active",
+      "orders": 0,
+      "spent": 0,
+      "joined": "2025-06-11"
+    },
+    {
+      "id": "u6",
+      "name": "Taylor Kim",
+      "email": "taylor.k@example.com",
+      "role": "Customer",
+      "status": "active",
+      "orders": 28,
+      "spent": 4120,
+      "joined": "2024-12-08"
+    },
+    {
+      "id": "u7",
+      "name": "Avery Brooks",
+      "email": "avery@example.com",
+      "role": "Customer",
+      "status": "invited",
+      "orders": 0,
+      "spent": 0,
+      "joined": "2026-03-01"
+    },
+    {
+      "id": "u8",
+      "name": "Quinn Patel",
+      "email": "quinn.p@example.com",
+      "role": "Admin",
+      "status": "active",
+      "orders": 0,
+      "spent": 0,
+      "joined": "2025-03-22"
+    },
+    {
+      "id": "u9",
+      "name": "Harper Singh",
+      "email": "harper.s@example.com",
+      "role": "Customer",
+      "status": "active",
+      "orders": 9,
+      "spent": 890,
+      "joined": "2025-08-15"
+    },
+    {
+      "id": "u10",
+      "name": "Blake Torres",
+      "email": "blake.t@example.com",
+      "role": "Customer",
+      "status": "active",
+      "orders": 3,
+      "spent": 214,
+      "joined": "2026-02-18"
+    },
+    {
+      "id": "u11",
+      "name": "Reese Morgan",
+      "email": "reese@studio.io",
+      "role": "Vendor",
+      "status": "active",
+      "orders": 0,
+      "spent": 0,
+      "joined": "2025-10-03"
+    },
+    {
+      "id": "u12",
+      "name": "Cameron Wu",
+      "email": "cameron.wu@example.com",
+      "role": "Customer",
+      "status": "suspended",
+      "orders": 1,
+      "spent": 42,
+      "joined": "2026-01-28"
+    },
+    {
+      "id": "u13",
+      "name": "Jamie Foster",
+      "email": "jamie.f@example.com",
+      "role": "Customer",
+      "status": "active",
+      "orders": 15,
+      "spent": 2104,
+      "joined": "2025-04-19"
+    },
+    {
+      "id": "u14",
+      "name": "Drew Alvarez",
+      "email": "drew.a@example.com",
+      "role": "Support",
+      "status": "active",
+      "orders": 0,
+      "spent": 0,
+      "joined": "2025-12-01"
+    },
+    {
+      "id": "u15",
+      "name": "Skyler Reed",
+      "email": "skyler@example.com",
+      "role": "Customer",
+      "status": "invited",
+      "orders": 0,
+      "spent": 0,
+      "joined": "2026-03-05"
+    },
+    {
+      "id": "u16",
+      "name": "Logan Chen",
+      "email": "logan.c@example.com",
+      "role": "Customer",
+      "status": "active",
+      "orders": 7,
+      "spent": 756,
+      "joined": "2025-07-22"
+    },
+    {
+      "id": "u17",
+      "name": "Emery Scott",
+      "email": "emery@example.com",
+      "role": "Customer",
+      "status": "active",
+      "orders": 4,
+      "spent": 318,
+      "joined": "2026-02-09"
+    },
+    {
+      "id": "u18",
+      "name": "Finley Brooks",
+      "email": "finley.b@example.com",
+      "role": "Admin",
+      "status": "active",
+      "orders": 0,
+      "spent": 0,
+      "joined": "2025-01-10"
+    }
+  ]
+}

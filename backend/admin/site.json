@@ -1,0 +1,12 @@
+{
+  "name": "PulseAdmin",
+  "tagline": "Operations console",
+  "product": "Shoply Commerce",
+  "admin": {
+    "name": "Ava Chen",
+    "email": "ava@pulseadmin.demo",
+    "role": "Super Admin"
+  },
+  "version": "2.4.1",
+  "footerBlurb": "Demo admin panel — data from /backend/admin."
+}

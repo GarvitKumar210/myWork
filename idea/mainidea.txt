@@ -1,0 +1,1 @@
+this is a my main website now you need to create multiple mini websites inside it, each example is a different website that will open when i click it opens that fully functional website react front end website the folder structure should be components/"name", each website should have of a different theme also suggest me 10 types of different website and from that i will choose 
