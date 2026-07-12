@@ -22,3 +22,7 @@ dist-ssr
 *.njsproj
 *.sln
 *.sw?
+
+# Local design notes / screenshots (not for deploy)
+idea/
+
