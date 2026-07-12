@@ -60,6 +60,7 @@ export default function Navbar() {
       <SideDrawer
         open={menuOpen}
         onClose={closeMenu}
+        hideFrom="max-720"
         panelClassName="bg-white text-navy"
       >
         <div className="flex items-center justify-between border-b border-line px-5 py-4">

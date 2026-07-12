@@ -1,3 +1,4 @@
+import { useEffect, useState } from 'react'
 import { NavLink, Link } from 'react-router-dom'
 import {
   LayoutDashboard,
@@ -20,6 +21,21 @@ const links = [
 ]
 
 export default function Sidebar({ site, mobileOpen, onClose }) {
+  const [mobileRendered, setMobileRendered] = useState(false)
+  const [mobileVisible, setMobileVisible] = useState(false)
+
+  useEffect(() => {
+    if (mobileOpen) {
+      setMobileRendered(true)
+      const id = requestAnimationFrame(() => {
+        requestAnimationFrame(() => setMobileVisible(true))
+      })
+      return () => cancelAnimationFrame(id)
+    }
+    setMobileVisible(false)
+    return undefined
+  }, [mobileOpen])
+
   const nav = (
     <>
       <div className="flex shrink-0 items-center justify-between gap-2 px-4 py-4 sm:px-5 sm:py-5">
@@ -93,28 +109,34 @@ export default function Sidebar({ site, mobileOpen, onClose }) {
         {nav}
       </aside>
 
-      <div
-        className={`fixed inset-0 z-[100] lg:hidden ${
-          mobileOpen ? 'pointer-events-auto' : 'pointer-events-none'
-        }`}
-        aria-hidden={!mobileOpen}
-      >
-        <button
-          type="button"
-          aria-label="Close menu"
-          className={`absolute inset-0 border-0 bg-black/50 transition-opacity duration-300 ${
-            mobileOpen ? 'opacity-100' : 'opacity-0'
+      {mobileRendered && (
+        <div
+          className={`fixed inset-0 z-[100] overflow-hidden lg:hidden ${
+            mobileVisible ? 'pointer-events-auto' : 'pointer-events-none'
           }`}
-          onClick={onClose}
-        />
-        <aside
-          className={`absolute left-0 top-0 flex h-[100dvh] w-[min(17rem,88vw)] flex-col overflow-hidden bg-slate-950 shadow-2xl transition-transform duration-300 ease-[cubic-bezier(0.22,1,0.36,1)] ${
-            mobileOpen ? 'translate-x-0' : '-translate-x-full'
-          }`}
+          aria-hidden={!mobileVisible}
         >
-          {nav}
-        </aside>
-      </div>
+          <button
+            type="button"
+            aria-label="Close menu"
+            className={`absolute inset-0 border-0 bg-black/50 transition-opacity duration-300 ${
+              mobileVisible ? 'opacity-100' : 'opacity-0'
+            }`}
+            onClick={onClose}
+          />
+          <aside
+            onTransitionEnd={(e) => {
+              if (e.target !== e.currentTarget) return
+              if (!mobileOpen && !mobileVisible) setMobileRendered(false)
+            }}
+            className={`absolute left-0 top-0 flex h-[100dvh] w-[min(17rem,88vw)] max-w-[100vw] flex-col overflow-hidden bg-slate-950 shadow-2xl transition-transform duration-300 ease-[cubic-bezier(0.22,1,0.36,1)] ${
+              mobileVisible ? 'translate-x-0' : '-translate-x-full'
+            }`}
+          >
+            {nav}
+          </aside>
+        </div>
+      )}
     </>
   )
 }

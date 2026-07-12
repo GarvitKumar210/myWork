@@ -88,6 +88,7 @@ export default function Nav() {
       <SideDrawer
         open={open}
         onClose={close}
+        hideFrom="lg"
         panelClassName="bg-neutral-950 text-neutral-100 border-l border-lime-400/20"
       >
         <div className="flex items-center justify-between border-b border-lime-400/15 px-5 py-4">
