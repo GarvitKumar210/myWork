@@ -152,7 +152,7 @@ export default function Sidebar({ site, mobileOpen, onClose }) {
 
   return (
     <>
-      <aside className="hidden h-full w-60 shrink-0 flex-col overflow-hidden border-r border-slate-800 bg-slate-950 lg:flex">
+      <aside className="sticky top-0 hidden h-dvh w-60 shrink-0 flex-col overflow-y-auto border-r border-slate-800 bg-slate-950 lg:flex">
         {nav}
       </aside>
       {mobileMenu}

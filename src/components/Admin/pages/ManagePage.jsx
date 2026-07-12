@@ -205,7 +205,7 @@ export default function ManagePage() {
 
       {/* Manage users */}
       {tab === 'users' && (
-        <div className="flex min-h-0 flex-1 flex-col gap-3 overflow-hidden">
+        <div className="flex flex-col gap-3">
           <div className="flex shrink-0 flex-col gap-2 sm:flex-row sm:items-center sm:justify-between">
             <p className="m-0 text-sm text-slate-500">
               {filteredUsers.length} users
@@ -220,7 +220,7 @@ export default function ManagePage() {
               />
             </div>
           </div>
-          <div className="flex min-h-0 flex-1 flex-col overflow-hidden rounded-2xl border border-slate-200 bg-white shadow-sm">
+          <div className="flex flex-col rounded-2xl border border-slate-200 bg-white shadow-sm">
             <TableScroll>
               <table className="min-w-[48rem] text-left text-sm">
                 <thead>
@@ -318,7 +318,7 @@ export default function ManagePage() {
 
       {/* Manage products */}
       {tab === 'products' && (
-        <div className="flex min-h-0 flex-1 flex-col gap-3 overflow-hidden">
+        <div className="flex flex-col gap-3">
           <div className="flex shrink-0 flex-col gap-2 sm:flex-row sm:items-center sm:justify-between">
             <p className="m-0 text-sm text-slate-500">
               {filteredProducts.length} products
@@ -343,7 +343,7 @@ export default function ManagePage() {
               </button>
             </div>
           </div>
-          <div className="flex min-h-0 flex-1 flex-col overflow-hidden rounded-2xl border border-slate-200 bg-white shadow-sm">
+          <div className="flex flex-col rounded-2xl border border-slate-200 bg-white shadow-sm">
             <TableScroll>
               <table className="min-w-[48rem] text-left text-sm">
                 <thead>
@@ -458,12 +458,12 @@ export default function ManagePage() {
         </div>
       )}
 
-      {/* Add product — no page scroll; form is compact */}
+      {/* Add product */}
       {tab === 'add' && (
-        <div className="min-h-0 flex-1 overflow-hidden">
+        <div className="overflow-visible">
           <form
             onSubmit={handleAddProduct}
-            className="mx-auto flex h-full max-w-xl flex-col gap-3 overflow-hidden rounded-2xl border border-slate-200 bg-white p-4 shadow-sm sm:p-5"
+            className="mx-auto flex max-w-xl flex-col gap-3 rounded-2xl border border-slate-200 bg-white p-4 shadow-sm sm:p-5"
           >
             <div>
               <h3 className="m-0 text-base font-semibold text-slate-900">

@@ -49,7 +49,7 @@ export default function SettingsPage() {
     <div className="admin-page gap-3">
       <form
         onSubmit={handleSave}
-        className="flex min-h-0 flex-1 flex-col gap-3 overflow-hidden"
+        className="flex flex-col gap-3"
       >
         <div className="grid shrink-0 gap-3 sm:grid-cols-2">
           <section className="rounded-xl border border-slate-200 bg-white p-3 shadow-sm sm:p-4">
@@ -105,7 +105,7 @@ export default function SettingsPage() {
         </div>
 
         {/* Team table — only scrollable area */}
-        <div className="flex min-h-0 flex-1 flex-col overflow-hidden rounded-xl border border-slate-200 bg-white shadow-sm">
+        <div className="flex flex-col rounded-xl border border-slate-200 bg-white shadow-sm">
           <div className="flex shrink-0 items-center justify-between border-b border-slate-100 px-4 py-2.5">
             <h2 className="m-0 text-sm font-semibold text-slate-900">Team</h2>
             <div className="flex items-center gap-2">

@@ -1,14 +1,13 @@
 /**
- * Table scroller: horizontal + vertical, stays inside the admin viewport.
- * Sticky header so columns stay readable while scrolling.
+ * Table wrapper: allows horizontal scroll on small screens.
+ * Vertical scrolling is handled by the page.
  */
 export default function TableScroll({ children, className = '' }) {
   return (
     <div
-      className={`admin-table-scroll min-h-0 flex-1 overflow-auto overscroll-contain ${className}`}
+      className={`admin-table-scroll ${className}`}
       role="region"
-      aria-label="Scrollable table"
-      tabIndex={0}
+      aria-label="Data table"
     >
       {children}
     </div>

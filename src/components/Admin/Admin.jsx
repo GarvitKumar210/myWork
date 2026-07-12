@@ -31,29 +31,20 @@ export default function Admin() {
     setMenuOpen(false)
   }, [location.pathname])
 
-  // No document/page scrollbar while admin is mounted
+  // Ensure admin never leaves a document scroll lock behind
   useEffect(() => {
     const html = document.documentElement
     const body = document.body
-    const prevHtml = html.style.overflow
-    const prevBody = body.style.overflow
-    html.style.overflow = 'hidden'
-    body.style.overflow = 'hidden'
-    return () => {
-      html.style.overflow = prevHtml
-      body.style.overflow = prevBody
-    }
-  }, [])
-
-  useEffect(() => {
-    if (!menuOpen) return undefined
-    // menu already covered by shell lock
-    return undefined
-  }, [menuOpen])
+    html.style.overflow = ''
+    body.style.overflow = ''
+    body.style.position = ''
+    body.style.top = ''
+    body.style.width = ''
+  }, [location.pathname])
 
   if (error) {
     return (
-      <div className="flex h-screen items-center justify-center bg-slate-50 px-6 text-sky-700">
+      <div className="flex min-h-screen items-center justify-center bg-slate-50 px-6 text-sky-700">
         Backend unavailable: {error}
       </div>
     )
@@ -65,7 +56,7 @@ export default function Admin() {
 
   return (
     <div
-      className="admin-shell flex w-full max-w-[100vw] bg-slate-100 text-slate-900 antialiased"
+      className="admin-shell flex w-full min-w-0 bg-slate-100 text-slate-900 antialiased"
       style={{ fontFamily: '"Inter", system-ui, sans-serif' }}
     >
       <Sidebar
@@ -73,7 +64,7 @@ export default function Admin() {
         mobileOpen={menuOpen}
         onClose={() => setMenuOpen(false)}
       />
-      <div className="flex min-h-0 min-w-0 flex-1 flex-col overflow-hidden">
+      <div className="flex min-w-0 flex-1 flex-col">
         <TopBar
           title={title}
           site={site}
@@ -81,8 +72,8 @@ export default function Admin() {
           onMenuOpen={() => setMenuOpen(true)}
           onMenuClose={() => setMenuOpen(false)}
         />
-        <main className="admin-main flex min-h-0 flex-1 flex-col overflow-hidden p-3 sm:p-4 md:p-5">
-          <div className="mx-auto flex h-full min-h-0 w-full min-w-0 max-w-6xl flex-col">
+        <main className="admin-main flex-1 p-3 sm:p-4 md:p-5">
+          <div className="mx-auto w-full min-w-0 max-w-6xl">
             <Outlet context={{ site }} />
           </div>
         </main>

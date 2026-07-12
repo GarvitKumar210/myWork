@@ -155,7 +155,7 @@ export default function DashboardPage() {
       </div>
 
       {/* Only this table scrolls */}
-      <div className="flex min-h-0 flex-1 flex-col overflow-hidden rounded-xl border border-slate-200 bg-white shadow-sm">
+      <div className="flex flex-col rounded-xl border border-slate-200 bg-white shadow-sm">
         <div className="flex shrink-0 flex-wrap items-center justify-between gap-2 border-b border-slate-100 px-4 py-2.5 sm:px-5">
           <h2 className="m-0 text-sm font-semibold text-slate-900 sm:text-base">
             Latest orders

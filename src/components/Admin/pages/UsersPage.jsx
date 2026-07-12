@@ -83,7 +83,7 @@ export default function UsersPage() {
         </div>
       </div>
 
-      <div className="flex min-h-0 flex-1 flex-col overflow-hidden rounded-2xl border border-slate-200 bg-white shadow-sm">
+      <div className="flex flex-col rounded-2xl border border-slate-200 bg-white shadow-sm">
         <TableScroll>
           <table className="min-w-[40rem] text-left text-sm sm:min-w-[44rem]">
             <thead>
