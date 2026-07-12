@@ -1,0 +1,46 @@
+{
+  "items": [
+    {
+      "id": "a1",
+      "type": "order",
+      "title": "New order ORD-10482",
+      "detail": "Jordan Lee · $256",
+      "time": "12 min ago"
+    },
+    {
+      "id": "a2",
+      "type": "user",
+      "title": "User invited",
+      "detail": "Avery Brooks joined the waitlist",
+      "time": "1 hr ago"
+    },
+    {
+      "id": "a3",
+      "type": "alert",
+      "title": "Low stock",
+      "detail": "Court Retro Hi is sold out",
+      "time": "2 hr ago"
+    },
+    {
+      "id": "a4",
+      "type": "order",
+      "title": "Refund issued",
+      "detail": "ORD-10478 cancelled · $64",
+      "time": "5 hr ago"
+    },
+    {
+      "id": "a5",
+      "type": "system",
+      "title": "Export complete",
+      "detail": "March orders CSV ready",
+      "time": "Yesterday"
+    },
+    {
+      "id": "a6",
+      "type": "user",
+      "title": "Role updated",
+      "detail": "Quinn Patel → Admin",
+      "time": "Yesterday"
+    }
+  ]
+}

@@ -1,0 +1,57 @@
+{
+  "intro": "Reserve a table for dinner. We hold bookings for 15 minutes past the seating time.",
+  "partySizes": [1, 2, 3, 4, 5, 6, 7, 8],
+  "maxPartyOnline": 8,
+  "largePartyNote": "For parties larger than 8, email hello@emberandoak.demo",
+  "timeSlots": [
+    "5:00 PM",
+    "5:30 PM",
+    "6:00 PM",
+    "6:30 PM",
+    "7:00 PM",
+    "7:30 PM",
+    "8:00 PM",
+    "8:30 PM",
+    "9:00 PM"
+  ],
+  "occasions": [
+    "Regular dinner",
+    "Birthday",
+    "Anniversary",
+    "Business",
+    "Date night",
+    "Other"
+  ],
+  "policies": [
+    "Smart casual dress is appreciated; no athletic wear after 6 PM.",
+    "We accommodate most allergies with 24 hours notice.",
+    "A credit card is not required for parties under 6.",
+    "Cancellations within 3 hours may lose the ability to rebook online the same week."
+  ],
+  "sampleBookings": [
+    {
+      "id": "b1",
+      "date": "2026-03-14",
+      "time": "7:00 PM",
+      "partySize": 2,
+      "name": "Alex Rivera",
+      "status": "confirmed"
+    },
+    {
+      "id": "b2",
+      "date": "2026-03-14",
+      "time": "7:30 PM",
+      "partySize": 4,
+      "name": "Sam Okonkwo",
+      "status": "confirmed"
+    },
+    {
+      "id": "b3",
+      "date": "2026-03-15",
+      "time": "6:00 PM",
+      "partySize": 2,
+      "name": "Taylor Kim",
+      "status": "pending"
+    }
+  ]
+}

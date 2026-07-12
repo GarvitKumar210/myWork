@@ -1,0 +1,19 @@
+{
+  "general": {
+    "storeName": "Shoply",
+    "supportEmail": "support@shoply.demo",
+    "timezone": "America/Los_Angeles",
+    "currency": "USD"
+  },
+  "notifications": [
+    { "id": "n1", "label": "New order alerts", "enabled": true },
+    { "id": "n2", "label": "Low stock alerts", "enabled": true },
+    { "id": "n3", "label": "Weekly summary email", "enabled": false },
+    { "id": "n4", "label": "Security login alerts", "enabled": true }
+  ],
+  "team": [
+    { "name": "Ava Chen", "role": "Super Admin", "email": "ava@pulseadmin.demo" },
+    { "name": "Quinn Patel", "role": "Admin", "email": "quinn.p@example.com" },
+    { "name": "Morgan Diaz", "role": "Support", "email": "morgan@example.com" }
+  ]
+}

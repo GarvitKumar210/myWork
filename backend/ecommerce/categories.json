@@ -1,0 +1,33 @@
+{
+  "items": [
+    {
+      "id": "all",
+      "name": "All",
+      "description": "Everything in the shop"
+    },
+    {
+      "id": "footwear",
+      "name": "Footwear",
+      "description": "Sneakers and everyday shoes",
+      "image": "/images/ecommerce/cat-footwear.jpg"
+    },
+    {
+      "id": "bags",
+      "name": "Bags",
+      "description": "Totes, packs, and carryalls",
+      "image": "/images/ecommerce/cat-bags.jpg"
+    },
+    {
+      "id": "apparel",
+      "name": "Apparel",
+      "description": "Layers for city weather",
+      "image": "/images/ecommerce/cat-apparel.jpg"
+    },
+    {
+      "id": "accessories",
+      "name": "Accessories",
+      "description": "Small goods with big utility",
+      "image": "/images/ecommerce/cat-accessories.jpg"
+    }
+  ]
+}

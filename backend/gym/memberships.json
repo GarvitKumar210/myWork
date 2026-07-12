@@ -1,0 +1,70 @@
+{
+  "plans": [
+    {
+      "id": "m1",
+      "name": "Pulse Drop-In",
+      "price": 25,
+      "period": "day",
+      "featured": false,
+      "features": [
+        "Full floor access",
+        "1 class included",
+        "Day locker"
+      ]
+    },
+    {
+      "id": "m2",
+      "name": "Pulse Monthly",
+      "price": 89,
+      "period": "month",
+      "featured": true,
+      "features": [
+        "Unlimited open gym",
+        "All group classes",
+        "Guest pass monthly",
+        "App booking"
+      ]
+    },
+    {
+      "id": "m3",
+      "name": "Pulse Annual",
+      "price": 79,
+      "period": "month",
+      "billed": "Billed yearly · save 2 months",
+      "featured": false,
+      "features": [
+        "Everything in Monthly",
+        "2 free PT sessions",
+        "Priority class holds",
+        "Merch discount"
+      ]
+    },
+    {
+      "id": "m4",
+      "name": "Pulse + Coach",
+      "price": 199,
+      "period": "month",
+      "featured": false,
+      "features": [
+        "Everything in Monthly",
+        "4 PT sessions / month",
+        "Custom programming",
+        "Nutrition check-ins"
+      ]
+    }
+  ],
+  "perks": [
+    {
+      "title": "Open floor",
+      "text": "Racks, platforms, turf, and machines without a time limit."
+    },
+    {
+      "title": "Coached classes",
+      "text": "Strength, HIIT, and recovery programmed by real coaches."
+    },
+    {
+      "title": "Recovery zone",
+      "text": "Stretch area, rollers, and quiet corners after heavy days."
+    }
+  ]
+}

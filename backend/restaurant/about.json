@@ -1,0 +1,51 @@
+{
+  "headline": "Fire, wood, and a long table",
+  "story": [
+    "Ember & Oak began as a pop-up in a borrowed kitchen — one grill, two cooks, and a short list of dishes that changed every night.",
+    "Today we still cook over live fire. Our menu is short on purpose: fewer plates, better produce, and enough time to get the crust right.",
+    "We work with farms within a few hours of the city, bake our own bread, and keep the dining room small so service stays personal."
+  ],
+  "values": [
+    {
+      "title": "Live fire",
+      "text": "Most of the menu touches flame — grill, hearth, or ember-roasted vegetables."
+    },
+    {
+      "title": "Season first",
+      "text": "We rewrite dishes when the market does. If it is not here yet, it is not on the plate."
+    },
+    {
+      "title": "Unhurried nights",
+      "text": "No rush tickets for two-tops. Come for dinner, not a stopwatch."
+    }
+  ],
+  "team": [
+    {
+      "id": "t1",
+      "name": "Maya Chen",
+      "role": "Chef & Co-founder",
+      "bio": "Former line cook turned fire obsessive. Leads the kitchen and the weekly market runs.",
+      "image": "/images/restaurant/chef.jpg"
+    },
+    {
+      "id": "t2",
+      "name": "Leo Hart",
+      "role": "Wine & Front of House",
+      "bio": "Builds the list, greets the room, and makes sure every table finds the right bottle.",
+      "image": "/images/restaurant/host.jpg"
+    },
+    {
+      "id": "t3",
+      "name": "Sofia Reyes",
+      "role": "Pastry",
+      "bio": "Honey, chocolate, and fruit that tastes like it was picked that morning.",
+      "image": "/images/restaurant/pastry.jpg"
+    }
+  ],
+  "gallery": [
+    { "id": "g1", "src": "/images/restaurant/interior.jpg", "alt": "Dining room with warm lighting" },
+    { "id": "g2", "src": "/images/restaurant/hero.jpg", "alt": "Restaurant exterior evening" },
+    { "id": "g3", "src": "/images/restaurant/steak.jpg", "alt": "Wood-fired steak" },
+    { "id": "g4", "src": "/images/restaurant/wine.jpg", "alt": "Wine service" }
+  ]
+}

@@ -1,0 +1,10 @@
+{
+  "demoAccounts": [
+    {
+      "email": "demo@shoply.demo",
+      "password": "demo1234",
+      "name": "Demo Shopper"
+    }
+  ],
+  "notes": "Demo auth only — credentials are checked client-side against this file."
+}

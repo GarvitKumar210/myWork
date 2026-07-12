@@ -1,0 +1,23 @@
+{
+  "name": "Shoply",
+  "tagline": "Modern essentials, shipped with care",
+  "description": "A curated store for everyday pieces — soft layers, clean sneakers, and bags that work from desk to weekend.",
+  "email": "hello@shoply.demo",
+  "phone": "+1 (628) 555-0142",
+  "address": {
+    "street": "210 Market Street",
+    "city": "San Francisco",
+    "state": "CA",
+    "zip": "94105"
+  },
+  "promo": {
+    "banner": "Free shipping over $75 · Easy 30-day returns",
+    "code": "WELCOME15",
+    "codeLabel": "15% off your first order"
+  },
+  "social": {
+    "instagram": "@shoply",
+    "tiktok": "@shoply"
+  },
+  "footerBlurb": "Demo storefront — prices and checkout are simulated."
+}

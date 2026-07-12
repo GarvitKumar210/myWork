@@ -1,0 +1,149 @@
+{
+  "categories": ["Footwear", "Bags", "Apparel", "Accessories"],
+  "items": [
+    {
+      "id": "pr1",
+      "name": "Cloud Runner Sneakers",
+      "sku": "SHP-CR-001",
+      "category": "Footwear",
+      "price": 128,
+      "stock": 42,
+      "status": "active"
+    },
+    {
+      "id": "pr2",
+      "name": "Metro Leather Tote",
+      "sku": "SHP-MT-014",
+      "category": "Bags",
+      "price": 168,
+      "stock": 18,
+      "status": "active"
+    },
+    {
+      "id": "pr3",
+      "name": "Softshell Overshirt",
+      "sku": "SHP-SO-022",
+      "category": "Apparel",
+      "price": 98,
+      "stock": 55,
+      "status": "active"
+    },
+    {
+      "id": "pr4",
+      "name": "Daypack 20L",
+      "sku": "SHP-DP-008",
+      "category": "Bags",
+      "price": 89,
+      "stock": 67,
+      "status": "active"
+    },
+    {
+      "id": "pr5",
+      "name": "Merino Crew",
+      "sku": "SHP-MC-031",
+      "category": "Apparel",
+      "price": 72,
+      "stock": 40,
+      "status": "active"
+    },
+    {
+      "id": "pr6",
+      "name": "City Cap",
+      "sku": "SHP-CC-003",
+      "category": "Accessories",
+      "price": 34,
+      "stock": 90,
+      "status": "active"
+    },
+    {
+      "id": "pr7",
+      "name": "Trail Low Boots",
+      "sku": "SHP-TB-019",
+      "category": "Footwear",
+      "price": 156,
+      "stock": 22,
+      "status": "active"
+    },
+    {
+      "id": "pr8",
+      "name": "Woven Card Holder",
+      "sku": "SHP-WH-011",
+      "category": "Accessories",
+      "price": 42,
+      "stock": 110,
+      "status": "active"
+    },
+    {
+      "id": "pr9",
+      "name": "Linen Camp Shirt",
+      "sku": "SHP-LC-027",
+      "category": "Apparel",
+      "price": 84,
+      "stock": 35,
+      "status": "active"
+    },
+    {
+      "id": "pr10",
+      "name": "Crossbody Sling",
+      "sku": "SHP-CS-016",
+      "category": "Bags",
+      "price": 64,
+      "stock": 48,
+      "status": "active"
+    },
+    {
+      "id": "pr11",
+      "name": "Wool Beanie",
+      "sku": "SHP-WB-005",
+      "category": "Accessories",
+      "price": 28,
+      "stock": 75,
+      "status": "active"
+    },
+    {
+      "id": "pr12",
+      "name": "Court Retro Hi",
+      "sku": "SHP-RH-002",
+      "category": "Footwear",
+      "price": 112,
+      "stock": 0,
+      "status": "out_of_stock"
+    },
+    {
+      "id": "pr13",
+      "name": "Nylon Travel Pouch",
+      "sku": "SHP-NP-041",
+      "category": "Accessories",
+      "price": 38,
+      "stock": 61,
+      "status": "active"
+    },
+    {
+      "id": "pr14",
+      "name": "Fleece Half-Zip",
+      "sku": "SHP-FZ-033",
+      "category": "Apparel",
+      "price": 110,
+      "stock": 27,
+      "status": "draft"
+    },
+    {
+      "id": "pr15",
+      "name": "Canvas Weekender",
+      "sku": "SHP-CW-020",
+      "category": "Bags",
+      "price": 142,
+      "stock": 14,
+      "status": "active"
+    },
+    {
+      "id": "pr16",
+      "name": "Everyday Loafer",
+      "sku": "SHP-EL-006",
+      "category": "Footwear",
+      "price": 134,
+      "stock": 31,
+      "status": "active"
+    }
+  ]
+}

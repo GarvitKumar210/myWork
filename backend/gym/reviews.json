@@ -1,0 +1,30 @@
+{
+  "average": 4.9,
+  "count": 386,
+  "items": [
+    {
+      "id": "r1",
+      "name": "Devon K.",
+      "rating": 5,
+      "text": "Best programming I have found outside of a competitive team. Coaches actually coach."
+    },
+    {
+      "id": "r2",
+      "name": "Nina S.",
+      "rating": 5,
+      "text": "HIIT Engine wrecks me in the best way. Never felt out of place as a beginner either."
+    },
+    {
+      "id": "r3",
+      "name": "Marcus T.",
+      "rating": 5,
+      "text": "Floor is clean, plates are calibrated, and nobody hogs the rack for selfies."
+    },
+    {
+      "id": "r4",
+      "name": "Elena R.",
+      "rating": 4,
+      "text": "Mobility Lab fixed my hip pain. Wish there were more evening yoga slots."
+    }
+  ]
+}

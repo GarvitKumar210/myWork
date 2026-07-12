@@ -1,0 +1,26 @@
+{
+  "name": "IRONPULSE",
+  "tagline": "Train hard. Recover harder.",
+  "description": "A high-performance gym for people who want strength, conditioning, and a crew that shows up.",
+  "phone": "+1 (415) 555-0188",
+  "email": "join@ironpulse.demo",
+  "address": {
+    "street": "900 Industrial Ave",
+    "city": "Oakland",
+    "state": "CA",
+    "zip": "94607"
+  },
+  "hours": [
+    { "days": "Mon – Fri", "time": "5:00 AM – 11:00 PM" },
+    { "days": "Saturday", "time": "7:00 AM – 8:00 PM" },
+    { "days": "Sunday", "time": "8:00 AM – 6:00 PM" }
+  ],
+  "stats": [
+    { "value": "12k+", "label": "sq ft floor" },
+    { "value": "40+", "label": "weekly classes" },
+    { "value": "18", "label": "coaches" },
+    { "value": "24/7", "label": "member access*" }
+  ],
+  "promo": "First week free with any annual plan · Demo only",
+  "footerBlurb": "Demo fitness site — data from /backend/gym."
+}
