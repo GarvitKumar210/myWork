@@ -1,4 +1,5 @@
 import { useEffect, useState } from 'react'
+import { createPortal } from 'react-dom'
 import { NavLink, Link } from 'react-router-dom'
 import {
   LayoutDashboard,
@@ -23,6 +24,11 @@ const links = [
 export default function Sidebar({ site, mobileOpen, onClose }) {
   const [mobileRendered, setMobileRendered] = useState(false)
   const [mobileVisible, setMobileVisible] = useState(false)
+  const [mounted, setMounted] = useState(false)
+
+  useEffect(() => {
+    setMounted(true)
+  }, [])
 
   useEffect(() => {
     if (mobileOpen) {
@@ -35,6 +41,12 @@ export default function Sidebar({ site, mobileOpen, onClose }) {
     setMobileVisible(false)
     return undefined
   }, [mobileOpen])
+
+  useEffect(() => {
+    if (mobileOpen || !mobileRendered) return undefined
+    const t = window.setTimeout(() => setMobileRendered(false), 360)
+    return () => window.clearTimeout(t)
+  }, [mobileOpen, mobileRendered])
 
   const nav = (
     <>
@@ -109,34 +121,37 @@ export default function Sidebar({ site, mobileOpen, onClose }) {
         {nav}
       </aside>
 
-      {mobileRendered && (
-        <div
-          className={`fixed inset-0 z-[100] overflow-hidden lg:hidden ${
-            mobileVisible ? 'pointer-events-auto' : 'pointer-events-none'
-          }`}
-          aria-hidden={!mobileVisible}
-        >
-          <button
-            type="button"
-            aria-label="Close menu"
-            className={`absolute inset-0 border-0 bg-black/50 transition-opacity duration-300 ${
-              mobileVisible ? 'opacity-100' : 'opacity-0'
+      {mounted &&
+        mobileRendered &&
+        createPortal(
+          <div
+            className={`fixed inset-0 z-[200] overflow-hidden lg:hidden ${
+              mobileVisible ? 'pointer-events-auto' : 'pointer-events-none'
             }`}
-            onClick={onClose}
-          />
-          <aside
-            onTransitionEnd={(e) => {
-              if (e.target !== e.currentTarget) return
-              if (!mobileOpen && !mobileVisible) setMobileRendered(false)
-            }}
-            className={`absolute left-0 top-0 flex h-[100dvh] w-[min(17rem,88vw)] max-w-[100vw] flex-col overflow-hidden bg-slate-950 shadow-2xl transition-transform duration-300 ease-[cubic-bezier(0.22,1,0.36,1)] ${
-              mobileVisible ? 'translate-x-0' : '-translate-x-full'
-            }`}
+            aria-hidden={!mobileVisible}
           >
-            {nav}
-          </aside>
-        </div>
-      )}
+            <button
+              type="button"
+              aria-label="Close menu"
+              className={`absolute inset-0 border-0 bg-black/50 transition-opacity duration-300 ${
+                mobileVisible ? 'opacity-100' : 'opacity-0'
+              }`}
+              onClick={onClose}
+            />
+            <aside
+              onTransitionEnd={(e) => {
+                if (e.target !== e.currentTarget) return
+                if (!mobileOpen && !mobileVisible) setMobileRendered(false)
+              }}
+              className={`absolute left-0 top-0 flex h-[100dvh] max-h-[100dvh] w-[min(17rem,88vw)] max-w-[100vw] flex-col overflow-hidden bg-slate-950 shadow-2xl transition-transform duration-300 ease-[cubic-bezier(0.22,1,0.36,1)] ${
+                mobileVisible ? 'translate-x-0' : '-translate-x-full'
+              }`}
+            >
+              {nav}
+            </aside>
+          </div>,
+          document.body,
+        )}
     </>
   )
 }

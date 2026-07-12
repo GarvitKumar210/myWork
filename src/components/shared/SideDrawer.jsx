@@ -1,9 +1,11 @@
 import { useEffect, useState } from 'react'
+import { createPortal } from 'react-dom'
 
 /**
  * Full-height mobile menu that slides in from the side.
- * Unmounts when closed so the off-screen panel cannot create
- * horizontal page scroll or a “stuck” sidebar on the right.
+ * Portaled to document.body so sticky / backdrop-blur headers
+ * cannot trap position:fixed and stretch the page (side panel + horizontal scroll).
+ * Unmounts when closed.
  */
 export default function SideDrawer({
   open,
@@ -18,6 +20,11 @@ export default function SideDrawer({
 }) {
   const [rendered, setRendered] = useState(false)
   const [visible, setVisible] = useState(false)
+  const [mounted, setMounted] = useState(false)
+
+  useEffect(() => {
+    setMounted(true)
+  }, [])
 
   useEffect(() => {
     if (open) {
@@ -31,7 +38,7 @@ export default function SideDrawer({
     return undefined
   }, [open])
 
-  // Fallback unmount if transitionend is skipped (reduced motion / interrupted)
+  // Fallback unmount if transitionend is skipped
   useEffect(() => {
     if (open || !rendered) return undefined
     const t = window.setTimeout(() => setRendered(false), 360)
@@ -40,10 +47,15 @@ export default function SideDrawer({
 
   useEffect(() => {
     if (!open) return undefined
-    const prev = document.body.style.overflow
-    document.body.style.overflow = 'hidden'
+    const html = document.documentElement
+    const body = document.body
+    const prevHtml = html.style.overflow
+    const prevBody = body.style.overflow
+    html.style.overflow = 'hidden'
+    body.style.overflow = 'hidden'
     return () => {
-      document.body.style.overflow = prev
+      html.style.overflow = prevHtml
+      body.style.overflow = prevBody
     }
   }, [open])
 
@@ -56,7 +68,7 @@ export default function SideDrawer({
     return () => window.removeEventListener('keydown', onKey)
   }, [open, onClose])
 
-  if (!rendered) return null
+  if (!mounted || !rendered) return null
 
   const fromRight = side === 'right'
   const hideClass =
@@ -68,9 +80,9 @@ export default function SideDrawer({
           ? 'min-[721px]:hidden'
           : 'md:hidden'
 
-  return (
+  const node = (
     <div
-      className={`fixed inset-0 z-[100] overflow-hidden ${hideClass} ${
+      className={`fixed inset-0 z-[200] overflow-hidden ${hideClass} ${
         visible ? 'pointer-events-auto' : 'pointer-events-none'
       }`}
       aria-hidden={!visible}
@@ -93,7 +105,7 @@ export default function SideDrawer({
           if (e.target !== e.currentTarget) return
           if (!open && !visible) setRendered(false)
         }}
-        className={`absolute top-0 bottom-0 flex h-[100dvh] max-w-[100vw] flex-col overflow-y-auto overscroll-contain shadow-2xl transition-transform duration-300 ease-[cubic-bezier(0.22,1,0.36,1)] ${widthClass} ${panelClassName} ${className} ${
+        className={`absolute top-0 bottom-0 flex h-[100dvh] max-h-[100dvh] max-w-[100vw] flex-col overflow-y-auto overscroll-contain shadow-2xl transition-transform duration-300 ease-[cubic-bezier(0.22,1,0.36,1)] ${widthClass} ${panelClassName} ${className} ${
           fromRight ? 'right-0' : 'left-0'
         } ${visible ? 'side-drawer-panel is-open' : 'side-drawer-panel'} ${
           visible
@@ -107,4 +119,6 @@ export default function SideDrawer({
       </aside>
     </div>
   )
+
+  return createPortal(node, document.body)
 }
